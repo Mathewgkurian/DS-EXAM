@@ -1,0 +1,13 @@
+import numpy as np
+import pandas as pd
+from matplotlib import pyplot as plt
+
+data = {'schoolbus':20,'privatebus':50,'parents':20,'cycle':10}
+
+transport = list(data.keys())
+frequency = list(data.values())
+plt.xlabel("Transport")
+plt.ylabel("Frequency")
+plt.title("primary Mode of Transport")
+plt.bar(transport,frequency,width=0.1,color='green')
+plt.show()
